@@ -13,7 +13,8 @@ var TaskForm = React.createClass({
 		var newItem = {
 			'description' : ReactDom.findDOMNode(this.refs.desc).value,
 			'status' : 'todo',
-			'owner' : window.config.username
+			// 'owner' : window.config.username
+			'owner' : 'atimic'
 		};
 
 		ReactDom.findDOMNode(this.refs.taskForm).reset();
@@ -22,8 +23,6 @@ var TaskForm = React.createClass({
 	},
 
 	render: function() {
-		require('electron-cookies');
-
 		return (
 			<div className="col-md-12">
 				<form ref="taskForm" id="taskForm" onSubmit={this.handleForm}>

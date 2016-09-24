@@ -21,7 +21,8 @@ var Tasks = React.createClass({
 
 	loadData : function(){
 
-		var username = window.config.username;
+		// var username = window.config.username;
+		var username = 'atimic';
 
 		app.database().ref('/tasks').on('value',function(snap){
 			var items = [],

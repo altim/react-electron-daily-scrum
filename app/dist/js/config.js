@@ -1,4 +1,4 @@
-fs = require('fs');
+// fs = require('fs');
 
-var configObject = JSON.parse(fs.readFileSync('app/config.json'));
-window.config = configObject;
+// var configObject = JSON.parse(fs.readFileSync('app/config.json'));
+// window.config = configObject;

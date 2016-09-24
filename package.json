@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "package": "asar pack build/DailyScrum-linux-x64/resources/app build/DailyScrum-linux-x64/resources/app.asar",
     "start": "electron .",
-    "build": "electron-packager . DailyScrum --platform=linux --ignore=node_modules/electron-* --icon=./icon.png --out=build/",
+    "build": "electron-packager . DailyScrum --ignore=node_modules/electron-* --out=build/",
     "deb64": "electron-installer-debian --src=build/DailyScrum-linux-x64 --dest=installers --arch=amd64"
   },
   "author": "",
@@ -15,13 +15,9 @@
   "devDependencies": {
     "asar": "^0.12.3",
     "bootstrap": "^3.3.7",
-    "browserify-fs": "^1.0.0",
-    "electron-cookies": "^1.1.0",
-    "electron-installer-debian": "^0.3.1",
     "electron-packager": "^8.0.0",
     "electron-prebuilt": "^1.4.1",
     "firebase": "^3.4.0",
-    "fs": "0.0.1-security",
     "gulp": "^3.9.1",
     "gulp-browserify": "^0.5.1",
     "gulp-concat": "^2.6.0",
