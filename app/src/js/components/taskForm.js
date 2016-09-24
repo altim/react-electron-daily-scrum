@@ -3,8 +3,7 @@
 **/
     	
 var React = require('react'),
-	ReactDom =require('react-dom'),
-	CookieHelper = require('../helpers/CookieHelper');
+	ReactDom =require('react-dom');
 
 var TaskForm = React.createClass({
 

@@ -1,5 +1,3 @@
-// var app = require(app);
-
 const electron  = require('electron');
 const {app, BrowserWindow, NativeImage} = electron;
 

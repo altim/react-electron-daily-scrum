@@ -4,9 +4,7 @@ var React = require('react'),
 	TaskForm = require('./taskForm'),
 	TaskList = require('./taskList'),
 	DoneTaskList = require('./doneTaskList'),
-	firebase = require('firebase'),
-	CookieHelper = require('../helpers/CookieHelper');
-
+	firebase = require('firebase');
 
 var config = {
 	    apiKey: "AIzaSyDGT07zHFpV1N9bCwuY75yGQRT77L7VDLA",
