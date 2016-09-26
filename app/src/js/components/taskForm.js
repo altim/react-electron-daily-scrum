@@ -3,7 +3,9 @@
 **/
     	
 var React = require('react'),
-	ReactDom =require('react-dom');
+	ReactDom =require('react-dom'),
+	Config = require('../config');
+
 
 var TaskForm = React.createClass({
 
@@ -13,8 +15,8 @@ var TaskForm = React.createClass({
 		var newItem = {
 			'description' : ReactDom.findDOMNode(this.refs.desc).value,
 			'status' : 'todo',
-			// 'owner' : window.config.username
-			'owner' : 'atimic'
+			// 'owner' : window.config.username,
+			'owner' : Config.getUsername()
 		};
 
 		ReactDom.findDOMNode(this.refs.taskForm).reset();

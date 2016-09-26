@@ -4,7 +4,8 @@ var React = require('react'),
 	TaskForm = require('./taskForm'),
 	TaskList = require('./taskList'),
 	DoneTaskList = require('./doneTaskList'),
-	firebase = require('firebase');
+	firebase = require('firebase'),
+    Config = require('../config');
 
 var config = {
 	    apiKey: "AIzaSyDGT07zHFpV1N9bCwuY75yGQRT77L7VDLA",
@@ -21,8 +22,7 @@ var Tasks = React.createClass({
 
 	loadData : function(){
 
-		// var username = window.config.username;
-		var username = 'atimic';
+		var username = Config.getUsername();
 
 		app.database().ref('/tasks').on('value',function(snap){
 			var items = [],

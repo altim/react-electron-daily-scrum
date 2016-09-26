@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "package": "asar pack build/DailyScrum-linux-x64/resources/app build/DailyScrum-linux-x64/resources/app.asar",
     "start": "electron .",
-    "build": "electron-packager . DailyScrum --ignore=node_modules/electron-* --out=build/",
+    "build": "electron-packager . DailyScrum --ignore=node_modules/electron-* --out=build/  && cp setup.sh build/DailyScrum-linux-x64/",
     "deb64": "electron-installer-debian --src=build/DailyScrum-linux-x64 --dest=installers --arch=amd64"
   },
   "author": "",

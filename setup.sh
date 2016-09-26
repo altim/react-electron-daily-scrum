@@ -1,3 +1,3 @@
 #!/bin/bash
-echo "{ \"username\" : \"$USER\" }" > app/config.json
+sed -i "s/{{username}}/$USER/g" resources/app/app/dist/js/main.js
 echo "SETUP DONE."
